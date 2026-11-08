@@ -1,4 +1,4 @@
-const CONFIG = { name: "Your Name" }; // Change this to her first name.
+const CONFIG = { name: "Vartika" }; // Change this to her first name.
 const $ = (s, root=document) => root.querySelector(s);
 const $$ = (s, root=document) => [...root.querySelectorAll(s)];
 function setName(){ $$("#heroName, [data-name]").forEach(el => el.textContent = CONFIG.name === "Your Name" ? "you" : CONFIG.name); }
