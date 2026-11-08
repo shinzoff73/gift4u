@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#fff5f8" />
+  <meta name="description" content="A little birthday surprise made with care." />
+  <title>A Little Piece of Happiness ✨</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <button class="music-toggle" id="musicToggle" aria-label="Toggle background music">♫ <span>Music</span></button>
+  <audio id="birthdayMusic" loop src="assets/music/birthday.mp3"></audio>
+
+  <main>
+    <section class="intro screen" id="intro">
+      <div class="intro-stars" aria-hidden="true">✦　·　✧　　 ·　✦</div>
+      <p class="eyebrow">A LITTLE SOMETHING, MADE JUST FOR YOU</p>
+      <div class="gift" id="gift" role="button" tabindex="0" aria-label="Open your birthday gift">
+        <div class="gift-lid"><span></span></div><div class="gift-box"><i></i><b></b></div>
+        <div class="gift-bow">♡</div>
+      </div>
+      <h1>There's a little<br><em>surprise</em> waiting for you.</h1>
+      <p class="muted">Take a breath, get comfy, and open your gift.</p>
+      <button class="primary-btn" id="openGift">Open your little surprise <span>↗</span></button>
+      <p class="tiny-note">made with a little extra thought ♡</p>
+    </section>
+
+    <div id="experience" class="hidden">
+      <section class="hero section-pad">
+        <div class="hero-sparkle">✧</div>
+        <p class="eyebrow">TODAY IS ALL ABOUT YOU</p>
+        <h1>Happy Birthday,<br><em id="heroName">beautiful human</em> ♡</h1>
+        <p class="hero-copy">A small corner of the internet, created to celebrate you, your dreams, and all the lovely things still waiting for you.</p>
+        <a class="scroll-link" href="#letter">A little note for you <span>↓</span></a>
+        <div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div>
+      </section>
+
+      <section class="section-pad letter-section" id="letter">
+        <div class="section-heading">
+          <p class="eyebrow">FIRST, A LITTLE NOTE</p>
+          <h2>Something I wanted<br>you to <em>know.</em></h2>
+        </div>
+        <article class="paper">
+          <div class="paper-top">✧ &nbsp; A NOTE FOR YOUR DAY &nbsp; ✧</div>
+          <p>Hey <span data-name>you</span>,</p>
+          <p>I kept thinking about what to write here. I could have gone with the usual birthday wishes, but somehow that didn't feel like enough. So I'll just say this honestly: I'm glad I got to know you.</p>
+          <p>I hope today has the kind of happiness that stays with you even after the candles are out — your favourite food, a few unexpected laughs, people who make you feel at home, and little moments you wish you could pause.</p>
+          <p>One thing I remember you saying is to love yourself and always stay happy. I hope you offer yourself that same reminder on the days when being positive feels a little harder. You deserve patience from yourself, too.</p>
+          <p>And please don't rush your dreams. You have time to learn, make mistakes, change direction, and figure things out. I hope this year gives you plenty of reasons to feel proud of how far you've come.</p>
+          <p class="signoff">Have a really, really lovely birthday. I'm rooting for you. <span>♡</span></p>
+        </article>
+      </section>
+
+      <section class="section-pad secret-section">
+        <div class="secret-card">
+          <span class="sticker">psst… 🤫</span>
+          <p class="eyebrow">A SMALL CONFESSION</p>
+          <h2>I have a tiny<br><em>secret.</em></h2>
+          <p>Okay, here's something funny: I knew your birthday almost a month ago. And somehow I managed to act like I had no clue. 😂</p>
+          <p>I was quietly thinking about what I could make for you while pretending to be completely unaware. I don't know if I pulled off the act very well, but at least the surprise is finally out.</p>
+          <p class="muted">Please act surprised anyway. I've been committed to this little performance for weeks. 🤭</p>
+        </div>
+      </section>
+
+      <section class="section-pad why-section">
+        <div class="section-heading">
+          <p class="eyebrow">WHY A WEBSITE?</p>
+          <h2>A gift made<br>of <em>pixels & thought.</em></h2>
+        </div>
+        <div class="why-grid">
+          <div class="why-icon">⌘</div>
+          <div>
+            <p>I'll be honest — I spent quite a bit of time wondering what to give you. I've never really made a birthday gift for someone like this before, and I didn't want to just pick something random because the date was coming up.</p>
+            <p>Then I thought: well, I know how to make websites. It's something I enjoy, and probably the most personal thing I could make with the skills I have right now. So I opened my editor and started building this little place.</p>
+            <p>It took more thought than I expected, and I'm sure there are tiny things I could keep tweaking forever. But that's the nice thing about making something yourself — it doesn't have to be perfect to mean something. I hope you like this little gift. ♡</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-pad scrapbook-section">
+        <div class="section-heading centered">
+          <p class="eyebrow">LITTLE MOMENTS, BIG SMILES</p>
+          <h2>A tiny <em>scrapbook.</em></h2>
+          <p class="muted">A few snapshots worth keeping close.</p>
+        </div>
+        <div class="photo-grid">
+          <figure class="photo-card photo-tall"><img src="assets/photos/photo1.jpg" alt="A favourite memory" onerror="this.src='https://placehold.co/700x900/f4dce8/8b627b?text=Add+your+photo+1'"><figcaption>this one makes me smile ♡</figcaption></figure>
+          <figure class="photo-card photo-wide"><img src="assets/photos/photo2.jpg" alt="A happy moment" onerror="this.src='https://placehold.co/900x650/e9e0f5/78638f?text=Add+your+photo+2'"><figcaption>a moment worth keeping</figcaption></figure>
+          <figure class="photo-card"><img src="assets/photos/photo3.jpg" alt="A special photo" onerror="this.src='https://placehold.co/700x700/f9e9dc/9b7964?text=Add+your+photo+3'"><figcaption>that smile!</figcaption></figure>
+          <figure class="photo-card"><img src="assets/photos/photo4.jpg" alt="Another favourite photo" onerror="this.src='https://placehold.co/700x700/e3e9f7/6e7795?text=Add+your+photo+4'"><figcaption>one more for the scrapbook</figcaption></figure>
+        </div>
+        <p class="photo-hint">Replace the sample images with your photos in <code>assets/photos/</code>.</p>
+      </section>
+
+      <section class="section-pad wishes-section">
+        <div class="section-heading">
+          <p class="eyebrow">A FEW THINGS I HOPE FOR YOU</p>
+          <h2>For this year<br>and <em>every year.</em></h2>
+        </div>
+        <div class="wish-list">
+          <div><span>01</span><p>May you meet people who appreciate your kindness.</p><i>✧</i></div>
+          <div><span>02</span><p>May your efforts turn into beautiful opportunities.</p><i>♡</i></div>
+          <div><span>03</span><p>May you keep your confidence, even on uncertain days.</p><i>✦</i></div>
+          <div><span>04</span><p>May you find happiness in the big wins and the tiny things.</p><i>☼</i></div>
+        </div>
+      </section>
+
+      <section class="section-pad future-section">
+        <div class="section-heading centered">
+          <p class="eyebrow">A LITTLE VISUAL FOR YOUR BIG DREAM</p>
+          <h2>To the <em>future founder.</em></h2>
+          <p class="muted">Every big thing starts with one small idea.</p>
+        </div>
+        <div class="workflow-shell">
+          <div class="workflow-top"><span class="window-dots">● ● ●</span><span>her-dreams.workflow</span><span class="workflow-status"><i></i> ready to run</span></div>
+          <div class="workflow-canvas" id="workflowCanvas">
+            <svg class="connections" viewBox="0 0 760 330" preserveAspectRatio="none" aria-hidden="true">
+              <path class="wire wire1" d="M155 155 C205 155 205 85 270 85"/>
+              <path class="wire wire2" d="M410 85 C470 85 455 155 520 155"/>
+              <path class="wire wire3" d="M590 195 C590 245 500 250 430 250"/>
+            </svg>
+            <div class="node node-trigger"><span class="node-icon">✧</span><small>TRIGGER</small><strong>A little idea</strong><em>Something begins</em></div>
+            <div class="node node-build"><span class="node-icon">⌘</span><small>BUILD</small><strong>Connect the dots</strong><em>Learn · create · automate</em></div>
+            <div class="node node-grow"><span class="node-icon">↗</span><small>GROW</small><strong>Her future startup</strong><em>Make it meaningful</em></div>
+            <div class="node node-dream"><span class="node-icon">☼</span><small>DESTINATION</small><strong>Dreams in motion</strong><em>One step at a time</em></div>
+            <div class="workflow-particle particle-one"></div><div class="workflow-particle particle-two"></div>
+          </div>
+          <div class="workflow-bottom"><span>✦ YOUR IDEAS DESERVE TO BE BUILT</span><button id="runWorkflow">Run workflow ↗</button></div>
+        </div>
+        <div class="workflow-message" id="workflowMessage">
+          <p class="eyebrow">WORKFLOW SUCCESSFUL</p>
+          <h3>And one day… <em>launch! 🚀</em></h3>
+          <p>I know you get excited talking about ideas, startups and all the things you could build with automation. I hope you get to turn one of those ideas into something real — something that began as a few connected nodes on a screen and grew into something people genuinely find useful.</p>
+          <p>There will be things to figure out, workflows that refuse to work, and probably a few “why is this node not connecting?” moments. But I hope those never take away the fun of creating. Keep trying things. Your first version doesn't have to be your final one.</p>
+          <div class="rocket-scene"><div class="rocket">🚀</div><span class="rocket-star">✦</span><span class="rocket-star">✧</span></div>
+          <p class="future-signoff">Your story is just getting started, future founder. ♡</p>
+        </div>
+      </section>
+
+      <section class="section-pad letters-section">
+        <div class="section-heading centered">
+          <p class="eyebrow">SAVE THESE FOR LATER</p>
+          <h2>Open when you<br><em>need a little note.</em></h2>
+          <p class="muted">Three tiny reminders, for three different days.</p>
+        </div>
+        <div class="envelope-grid">
+          <button class="envelope" data-letter="bad"><span class="env-icon">☁</span><strong>When you're having a bad day</strong><small>open this note ↗</small></button>
+          <button class="envelope" data-letter="doubt"><span class="env-icon">✧</span><strong>When you doubt yourself</strong><small>open this note ↗</small></button>
+          <button class="envelope" data-letter="smile"><span class="env-icon">☀</span><strong>When you need a smile</strong><small>open this note ↗</small></button>
+        </div>
+        <div class="letter-modal hidden" id="letterModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+          <div class="modal-paper"><button class="modal-close" id="closeModal" aria-label="Close">×</button><p class="eyebrow">A NOTE FOR YOU</p><h3 id="modalTitle"></h3><p id="modalBody"></p><span class="modal-heart">♡</span></div>
+        </div>
+      </section>
+
+      <section class="section-pad care-section">
+        <div class="care-card">
+          <p class="eyebrow">A GENTLE REMINDER</p>
+          <h2>Don't forget to<br><em>take care of you.</em></h2>
+          <div class="care-points"><p>♡ Take breaks when you need them.</p><p>♡ Don't be too hard on yourself.</p><p>♡ Celebrate the small wins, too.</p><p>♡ You deserve the kindness you give others.</p></div>
+          <p class="care-quote">"Love yourself and always be happy."</p>
+          <p class="muted">I hope you remember your own words on the days you need them most.</p>
+        </div>
+      </section>
+
+      <section class="section-pad cake-section">
+        <div class="section-heading centered">
+          <p class="eyebrow">MAKE A LITTLE WISH</p>
+          <h2>One more thing…<br><em>it's cake time.</em></h2>
+          <p class="muted">Tap the candles to blow them out.</p>
+        </div>
+        <div class="cake-wrap">
+          <div class="candles"><button class="candle" aria-label="Blow out candle 1"><i></i></button><button class="candle" aria-label="Blow out candle 2"><i></i></button><button class="candle" aria-label="Blow out candle 3"><i></i></button></div>
+          <div class="cake-top"></div><div class="cake-body"><span>♡</span></div><div class="cake-plate"></div>
+        </div>
+        <p class="wish-message" id="wishMessage">Make a wish. The best things are still ahead. ✨</p>
+      </section>
+
+      <section class="final-section section-pad">
+        <div class="final-stars">✦　✧　·　✦</div>
+        <p class="eyebrow">BEFORE YOU GO</p>
+        <h2>Here's to another<br>beautiful <em>chapter.</em></h2>
+        <p>I don't have some grand piece of advice for your new year. I just hope it is kind to you. I hope there are new places, good conversations, unexpected opportunities, and plenty of days that end with you thinking, “that was a good day.”</p>
+        <p>Keep making plans, keep changing them when you need to, and keep finding reasons to enjoy the life you're building along the way. And on the days when things feel a bit much, remember that you don't have to do it all at once.</p>
+        <p>I'm glad I got to make this for you. I hope opening it gave you at least one proper smile.</p>
+        <h3>Happy Birthday, <span data-name>you</span>. ♡</h3>
+        <button class="replay-btn" id="replay">Experience it again ↺</button>
+        <p class="tiny-note">a little gift, made with care.</p>
+      </section>
+    </div>
+  </main>
+  <div class="toast" id="toast">A little wish sent your way ✨</div>
+  <script src="script.js"></script>
+</body>
+</html>
